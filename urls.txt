@@ -1,0 +1,10 @@
+http://cs360.byu.edu/static/fall-2013/lectures/thread-pool-architecture.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/thread-synchronization.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/semaphores.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/mutexes-and-monitors.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/deadlock.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/unix-domain-sockets.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/the-internet-and-its-architecture.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/socket-programming.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/sockets-and-the-os.pdf
+http://cs360.byu.edu/static/fall-2013/lectures/threads-and-the-os.pdf
