@@ -14,7 +14,7 @@ args.url = args.url.strip()
 if args.url[-1] != '/':
     file_name = args.url.split('/')[-1].strip()
 
-if args.url[0:6] != 'http://':
+if args.url[0:7] != 'http://':
     args.url = 'http://' + args.url
 
 head = requests.head(args.url)
@@ -34,8 +34,8 @@ temp = 0
 i = 0
 while i < args.num:
     temp += chunk_size
-    if temp >= length:
-        temp = length - 1
+    if temp >= length or i == (args.num - 1):
+        temp = length
     chunks.append(temp)
     i += 1
 
@@ -56,7 +56,10 @@ j = 1
 import time
 start = time.time()
 while i < args.num:
-    range_str = 'bytes=%d-%d' % (chunks[j-1], chunks[j])
+    if i == 0:
+        range_str = 'bytes=%d-%d' % (0, chunks[j])
+    else:
+        range_str = 'bytes=%d-%d' % (chunks[j-1]+1, chunks[j])
     thread = myThread(args.url, range_str)
     threads.append(thread)
     i += 1
